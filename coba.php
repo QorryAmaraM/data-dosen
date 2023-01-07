@@ -36,196 +36,210 @@ img {
   padding: 0px 40px;
 }
 
-
 .topnav {
-  overflow: hidden;
-  background-color: #39000A;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-}
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          position: fixed;
+          background-color: #39000A;
+        }
 
-.row {
-  justify-content: space-between;
-}
+        .topnav .nav {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: stretch;
+        }
 
-.topnav a.brand a{
-  position: absolute;
-  padding-left: 20px;
-  float: left;
-  line-height: 70px;
-  text-transform: uppercase;
-  font-size: 1.4em;
-  align-items: center;
-}
+        .topnav a.brand a {
+          position: absolute;
+          padding-left: 20px;
+          line-height: 70px;
+          text-transform: uppercase;
+          font-size: 1.4em;
+          align-items: center;
+        }
 
-.topnav a {
-  float: left;
-  display: flex;
-  justify-content: flex-end;
-  color: #f2f2f2;
-  text-align: right;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 15px;
-  align-items: center;
-  justify-content: space-between;
-}
+        .logo {
+          display: flex;
+          gap: 16px;
+          padding: 8px 50px;
+        }
 
-.topnav .icon {
-  display: none;
-}
+        .header {
+          display: flex;
+          flex-direction: column;
+          color: white;
+          margin: 0;
+        }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
+        .header p {
+          margin: 0;
+        }
 
-.dropdown .dropbtn {
-  font-size: 15px;    
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  
-}
+        .topnav a, .topnav button {
+          display: flex;
+          justify-content: flex-end;
+          color: #f2f2f2;
+          text-align: right;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 15px;
+          align-items: center;
+          justify-content: space-between;
+        }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #B6001F;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+        .topnav a:hover, .dropdown:hover .dropbtn {
+          background-color: #009128;
+          color: white;
+        }
 
-.dropdown-content a {
-  float: none;
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-}
+        .topnav .icon {
+          display: none;
+        }
 
+        .dropdown .dropbtn {
+          height: 100%;
+          font-size: 15px;
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+          width: 100%;
+        }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #009128;
-  color: white;
-}
+        .dropdown-content {
+          background-color: #39000A;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
 
-.dropdown-content a:hover {
-  background-color: #009128;
-  color: black;
-}
+        .dropdown-content a {
+          color: white;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: center;
+        }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+        .dropdown-content-nested {
+          background-color: #B6001F !important;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 2;
+          top: 0;
+          left: 160px;
+        }
 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
+        .dropdown-content-nested a {
+          color: white;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: center;
+        }
 
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-    
-  }
+        .dropdown > .dropdown-content,
+        .dropdown > .dropdown-content-nested {
+          display: none;
+          position: absolute;
+          flex-direction: column;
+        }
+        .dropdown:hover > .dropdown-content,
+        .dropdown:hover > .dropdown-content-nested {
+          display: flex;
+          background-color: #B6001F;
+        }
+    </style>
 
-  
-}
-
-</style>
-
-
-<div class="topnav" id="myTopnav">
-  <div class="row">
-      <a href="#!">LOGO</a>
+    <div class="topnav">
+      <div class="logo">
+          <img src="https://ftmunjani.net/wp-content/uploads/2020/07/logo-3.png" width="60px" height="60px" />
+          <div class="header">
+            <p style="font-size: 12px">Fakultas</p>
+            <p style="font-weight: 700">Teknologi Manufaktur</p>
+            <p style="font-size: 11px">Universitas Jenderal Achmad Yani</p>
+          </div>
+      </div>
+      <div class="nav">
+        <div class="dropdown">
+          <button class="dropbtn">PROFIL 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">PROFIL DAN SEJARAH</a>
+            <a href="#">VISI DAN MISI</a>
+            <a href="#">AKREDITASI</a>
+            <a href="#">STRUKTUR ORGANISASI</a>
+            <a href="#">PIMPINAN</a>
+            <a href="#">SENAT</a>
+            <a href="#">DOSEN</a>
+            <a href="#">TENAGA KEPENDIDIKAN</a>
+            <a href="#">MAHASISWA</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn">ADMISI 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">PENDAFTARAN</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn">PROGRAM STUDI 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">TEKNIK INDUSTRI</a>
+            <a href="#">TEKNIK MESIN</a>
+            <a href="#">TEKNIK METALURGI</a>
+            <a href="#">MANAJEMEN TEKNOLOGI</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn">FASILITAS 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="dropdown">
+              <button class="dropbtn">AKADEMIK 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content-nested">
+                <a href="#">KALENDER AKADEMIK</a>
+                <a href="#">E-JOURNAL</a>
+                <a href="#">PERPUSTAKAAN</a>
+              </div>
+              <button class="dropbtn">KEMAHASISWAAN 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content-nested">
+                <a href="#">PERATURAN AKADEMIK</a>
+                <a href="#">UNIT KEGIATAN KAMPUS</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn">PENELITIAN DAN PKM 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">SIMLIT LPPM</a>
+            <a href="#">DATA PENELITIAN & PKM</a>
+            <a href="#">DAFTAR JURNAL</a>
+          </div>
+        </div> 
+        <a href="#about">PENGUMUMAN</a>
+        <a href="#about">KERJA SAMA</a>
+        <a href="#about">TRACER STUDY</a>
+      </div>
     </div>
-  <div class="dropdown">
-    <button class="dropbtn">PROFIL 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">PROFIL DAN SEJARAH</a>
-      <a href="#">VISI DAN MISI</a>
-      <a href="#">AKREDITASI</a>
-      <a href="#">STRUKTUR ORGANISASI</a>
-      <a href="#">PIMPINAN</a>
-      <a href="#">SENAT</a>
-      <a href="#">DOSEN</a>
-      <a href="#">TENAGA KEPENDIDIKAN</a>
-      <a href="#">MAHASISWA</a>
-    </div>
-  </div> 
-  <div class="dropdown">
-    <button class="dropbtn">ADMISI 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">PENDAFTARAN</a>
-    </div>
-  </div> 
-  <div class="dropdown">
-    <button class="dropbtn">PROGRAM STUDI 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">TEKNIK INDUSTRI</a>
-      <a href="#">TEKNIK MESIN</a>
-      <a href="#">TEKNIK METALURGI</a>
-      <a href="#">MANAJEMEN TEKNOLOGI</a>
-    </div>
-  </div> 
-  <div class="dropdown">
-    <button class="dropbtn">FASILITAS 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">AKADEMIK</a>
-      <a href="#">KEMAHASISWAAN</a>
-    </div>
-  </div> 
-  <div class="dropdown">
-    <button class="dropbtn">PENELITIAN DAN PKM 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">SIMLIT LPPM</a>
-      <a href="#">DATA PENELITIAN & PKM</a>
-      <a href="#">DAFTAR JURNAL</a>
-    </div>
-  </div> 
-  <a href="#about">PENGUMUMAN</a>
-  <a href="#about">KERJA SAMA</a>
-  <a href="#about">TRACER STUDY</a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
 
 <div class="w3-container">
   <h2 style="font-family: var(--font--family-poppins); text-align:center">PROFIL DOSEN</h2>
@@ -354,7 +368,7 @@ img {
 
   <div id="Riwayat Pendidikan" class="w3-container city" style="display:none">
     <h2 style="text-align:center">Riwayat Pendidikan</h2>
-    <table class="w3-table-all style="text-align:center"">
+    <table class="w3-table-all style="text-align:center">
     <tr>
       <th>No</th>
       <th>Tanggal Ijazah</th>
