@@ -1,0 +1,142 @@
+<section id="tabs" class="project-tab">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav>
+                    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-publikasi-tab" data-toggle="tab" href="#nav-publikasi" role="tab" aria-controls="nav-publikasi" aria-selected="true">Publikasi</a>
+                        <a class="nav-item nav-link" id="nav-Penelitian-tab" data-toggle="tab" href="#nav-Penelitian" role="tab" aria-controls="nav-Penelitian" aria-selected="false">Penelitian</a>
+                        <a class="nav-item nav-link" id="nav-Buku-tab" data-toggle="tab" href="#nav-Buku" role="tab" aria-controls="nav-Buku" aria-selected="false">Buku</a>
+                        <a class="nav-item nav-link" id="nav-Riwayat Pendidikan-tab" data-toggle="tab" href="#nav-Riwayat Pendidikan" role="tab" aria-controls="nav-Riwayat Pendidikan" aria-selected="false">Riwayat Pendidikan</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-publikasi" role="tabpanel" aria-labelledby="nav-publikasi-tab">
+                        <table class="table" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Project Name</th>
+                                    <th>Employer</th>
+                                    <th>Awards</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#">Work 1</a></td>
+                                    <td>Doe</td>
+                                    <td>john@example.com</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Work 2</a></td>
+                                    <td>Moe</td>
+                                    <td>mary@example.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="nav-Penelitian" role="tabpanel" aria-labelledby="nav-Penelitian-tab">
+                        <table class="table" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Project Name</th>
+                                    <th>Employer</th>
+                                    <th>Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#">Work 1</a></td>
+                                    <td>Doe</td>
+                                    <td>john@example.com</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Work 2</a></td>
+                                    <td>Moe</td>
+                                    <td>mary@example.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="nav-Buku" role="tabpanel" aria-labelledby="nav-Buku-tab">
+                        <table class="table" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Contest Name</th>
+                                    <th>Date</th>
+                                    <th>Award Position</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#">Work 1</a></td>
+                                    <td>Doe</td>
+                                    <td>john@example.com</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Work 2</a></td>
+                                    <td>Moe</td>
+                                    <td>mary@example.com</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Work 3</a></td>
+                                    <td>Dooley</td>
+                                    <td>july@example.com</td>
+                                </tr>
+                                <div class="tab-pane fade" id="nav-Buku" role="tabpanel" aria-labelledby="nav-Buku-tab">
+                        <table class="table" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Contest Name</th>
+                                    <th>Date</th>
+                                    <th>Award Position</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#">Work 1</a></td>
+                                    <td>Doe</td>
+                                    <td>john@example.com</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Work 2</a></td>
+                                    <td>Moe</td>
+                                    <td>mary@example.com</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Work 3</a></td>
+                                    <td>Dooley</td>
+                                    <td>july@example.com</td>
+                                </tr>
+                                <div class="tab-pane fade" id="nav-Riwayat Pendidikan" role="tabpanel" aria-labelledby="nav-Riwayat Pendidikan-tab">
+                            <table class="table" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>Contest Name</th>
+                                        <th>Date</th>
+                                        <th>Award Position</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="#">Work 1</a></td>
+                                                <td>Doe</td>
+                                                <td>john@example.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">Work 2</a></td>
+                                                <td>Moe</td>
+                                                <td>mary@example.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">Work 3</a></td>
+                                                <td>Dooley</td>
+                                                <td>july@example.com</td>
+                                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
