@@ -42,6 +42,7 @@ img {
           width: 100%;
           position: fixed;
           background-color: #39000A;
+          margin: top;
         }
 
         .topnav .nav {
@@ -52,7 +53,7 @@ img {
         }
 
         .topnav a.brand a {
-          position: absolute;
+          position:  ;
           padding-left: 20px;
           line-height: 70px;
           text-transform: uppercase;
@@ -154,6 +155,38 @@ img {
           display: flex;
           background-color: #B6001F;
         }
+
+        /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+        /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
     </style>
 
     <div class="topnav">
@@ -241,8 +274,12 @@ img {
       </div>
     </div>
 
+
+    <div class="w3-padding-48">
+</div> 
+
 <div class="w3-container">
-  <h2 style="font-family: var(--font--family-poppins); text-align:center">PROFIL DOSEN</h2>
+  <h2 style="font-family: var(--font--family-poppins); font-weight: bold; text-align:center">PROFIL DOSEN</h2>
   
   <div class="w3-padding-16">
 </div>
@@ -294,26 +331,29 @@ img {
 
 <div class="w3-padding-16">
 </div>
+<hr class="hr" /> </hr>
+<div class="w3-padding-16">
+</div>
 
 <div class="tab-container">
   <div class="w3-row w3-round-xlarge w3-gray w3-padding-8" style="border-radius: 10px 5px 0px 0px">
     <a href="javascript:void(0)" onclick="openCity(event, 'Publikasi');"id="defaultOpen">
-      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding active" style="width: 25%; text-align:center">Publikasi</div>
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding active" style="width: 25%; text-align:center; font-weight: bold">Publikasi</div>
     </a>
     <a href="javascript:void(0)" onclick="openCity(event, 'Penelitian');">
-      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"style="width: 25%; text-align:center">Penelitian</div>
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"style="width: 25%; text-align:center; font-weight: bold">Penelitian</div>
     </a>
     <a href="javascript:void(0)" onclick="openCity(event, 'Buku');">
-      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"style="width: 25%; text-align:center">Buku</div>
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"style="width: 25%; text-align:center; font-weight: bold">Buku</div>
     </a>
     <a href="javascript:void(0)" onclick="openCity(event, 'Riwayat Pendidikan');">
-      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding" style="width: 25%; text-align:center">Riwayat Pendidikan</div>
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding" style="width: 25%; text-align:center; font-weight: bold">Riwayat Pendidikan</div>
     </a>
   </div>
 
 
   <div id="Publikasi" class="w3-container city" style="display:none">
-    <h2 style="text-align:center">Publikasi</h2>
+    <h2 style="text-align:center; font-family: var(--font--family-poppins) ">Publikasi</h2>
     <table class="w3-table-all">
     <tr>
       <th>No</th>
@@ -331,7 +371,7 @@ img {
   </div>
 
   <div id="Penelitian" class="w3-container city" style="display:none">
-    <h2 style="text-align:center">Penelitian</h2>
+    <h2 style="text-align:center; font-family: var(--font--family-poppins)">Penelitian</h2>
     <table class="w3-table-all">
     <tr>
       <th>No</th>
@@ -349,7 +389,7 @@ img {
   </div>
 
   <div id="Buku" class="w3-container city" style="display:none">
-    <h2 style="text-align:center">Buku</h2>
+    <h2 style="text-align:center; font-family: var(--font--family-poppins)">Buku</h2>
     <table class="w3-table-all">
     <tr>
       <th>No</th>
@@ -367,7 +407,7 @@ img {
   </div> 
 
   <div id="Riwayat Pendidikan" class="w3-container city" style="display:none">
-    <h2 style="text-align:center">Riwayat Pendidikan</h2>
+    <h2 style="text-align:center; font-family: var(--font--family-poppins)">Riwayat Pendidikan</h2>
     <table class="w3-table-all style="text-align:center">
     <tr>
       <th>No</th>
@@ -385,13 +425,9 @@ img {
   </div>
 </div>
 
-<div class="container">
-  <h2>Panel Footer</h2>
-  <div class="panel panel-default">
-    <div class="panel-heading">Panel Heading</div>
-    <div class="panel-body">Panel Content</div>
-    <div class="panel-footer">Panel Footer</div>
-  </div>
+<div class="link-jurnal">
+  <p>Visit me on:
+    <p><a href="https://www.scopus.com/"><img src="https://literasidigital.com/wp-content/uploads/2020/01/Primos-1024x369.jpg" alt="scopus" width="100" height="132"></a></p>
 </div>
 
 <script>
