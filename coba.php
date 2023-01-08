@@ -429,6 +429,8 @@ img {
 <div class="link-jurnal">
   <p>Visit me on:
     <p><a href="https://www.scopus.com/"><img src="https://literasidigital.com/wp-content/uploads/2020/01/Primos-1024x369.jpg" alt="scopus" width="100" height="132"></a></p>
+    <p><a href="https://sinta.kemdikbud.go.id/"><img src="https://web.syekhnurjati.ac.id/iat/wp-content/uploads/sites/18/2020/09/Sinta.jpg" alt="sinta" width="100" height="132"></a></p>
+    <p><a href="https://sistem.lldikti6.id/"><img src="https://karirlab-prod-bucket.s3.ap-southeast-1.amazonaws.com/files/privates/FsU1ebI2fa2t5NTF9qWwZssv8If2beYm4YTqjwn4.png" alt="lldikti" width="100" height="132"></a></p>
 </div>
 
 <script>
