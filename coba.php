@@ -156,8 +156,7 @@ img {
           background-color: #B6001F;
         }
 
-        /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
@@ -166,10 +165,10 @@ img {
     display: block;
   }
 }
-        /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
+  .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
@@ -271,9 +270,11 @@ img {
         <a href="#about">PENGUMUMAN</a>
         <a href="#about">KERJA SAMA</a>
         <a href="#about">TRACER STUDY</a>
+        
       </div>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-
+  
 
     <div class="w3-padding-48">
 </div> 
